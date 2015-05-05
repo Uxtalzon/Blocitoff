@@ -1,0 +1,10 @@
+Name: <%= current_user.name %><br>
+Email: <%= current_user.email %><br>
+Created: <%= current_user.created_at %><br>
+Last Sign In: <%= current_user.last_sign_in_at %><br>
+
+
+<h2>Add an Item:</h2>
+<%= render partial: "items/form" %>
+<%= render @items %>
+<%# render partial: "items/item", collection: @items %>
