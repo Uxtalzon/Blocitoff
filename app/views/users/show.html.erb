@@ -6,5 +6,8 @@ Last Sign In: <%= current_user.last_sign_in_at %><br>
 
 <h2>Add an Item:</h2>
 <%= render partial: "items/form" %>
+
+<ul id="my-list">
 <%= render @items %>
+</ul>
 <%# render partial: "items/item", collection: @items %>

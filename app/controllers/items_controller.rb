@@ -1,10 +1,10 @@
 class ItemsController < ApplicationController
+  respond_to :js
   
   def create
     @item = Item.new(item_params)
     @item.user = current_user
     @item.save
-    redirect_to current_user
   end
   
   private

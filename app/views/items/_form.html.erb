@@ -1,6 +1,6 @@
-<%= form_for @item do |f| %>
+<%= form_for @item, remote: true do |f| %>
 <div class="form-inline">
-  <b>New Entry:</b> <%= f.text_field :name, class: 'form-control' %>
+  <b>New Entry:</b> <%= f.text_field :name, class: 'form-control', id: "item-field" %>
   <div class="form-group">
     <%= f.submit "Create Item", class: 'btn btn-default' %>
     <% end %>
