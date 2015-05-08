@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   
   resources :users
   
-  resources :items, only: [:create]
+  resources :items, only: [:create, :destroy]
   
   root to: 'home#index'
   # The priority is based upon order of creation: first created -> highest priority.

@@ -7,6 +7,11 @@ class ItemsController < ApplicationController
     @item.save
   end
   
+  def destroy
+    @item = Item.find(params[:id])
+    @item.destroy
+  end
+  
   private
   
   def item_params
